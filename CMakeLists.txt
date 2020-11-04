@@ -13,4 +13,5 @@ include_directories(${JNI_INCLUDE_DIRS})
 
 set(CMAKE_CXX_STANDARD 17)
 AUX_SOURCE_DIRECTORY(src DIR_SRCS)
-add_executable(MlsqlNativeLib main.cpp)
+#add_executable(MlsqlNativeLib main.cpp)
+add_library(MlsqlNativeLib SHARED ${DIR_SRCS})
